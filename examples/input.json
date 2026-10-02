@@ -1,0 +1,38 @@
+{
+  "timestamp": 1000,
+  "assets": {
+    "ETH": {
+      "price": "2000",
+      "liquidation_threshold": "0.8",
+      "updated_at": 900
+    },
+    "USD": {
+      "price": "1",
+      "liquidation_threshold": "0",
+      "updated_at": 900
+    }
+  },
+  "positions": [
+    {
+      "asset": "ETH",
+      "amount": "1",
+      "side": "collateral"
+    },
+    {
+      "asset": "USD",
+      "amount": "1200",
+      "side": "debt"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "base"
+    },
+    {
+      "name": "crash",
+      "price_multipliers": {
+        "ETH": "0.5"
+      }
+    }
+  ]
+}

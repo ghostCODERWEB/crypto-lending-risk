@@ -1,0 +1,48 @@
+{
+  "scenarios": [
+    {
+      "adjusted_collateral": "1600.0",
+      "collateral_value": "2000",
+      "debt_value": "1200",
+      "health_factor": "1.33333333333333333333333333333333333333333333333333333333333",
+      "liquidatable": false,
+      "max_repay_value": "0",
+      "name": "base",
+      "positions": [
+        {
+          "asset": "ETH",
+          "side": "collateral",
+          "value": "2000"
+        },
+        {
+          "asset": "USD",
+          "side": "debt",
+          "value": "1200"
+        }
+      ],
+      "seize_value": "0.00"
+    },
+    {
+      "adjusted_collateral": "800.00",
+      "collateral_value": "1000.0",
+      "debt_value": "1200",
+      "health_factor": "0.666666666666666666666666666666666666666666666666666666666667",
+      "liquidatable": true,
+      "max_repay_value": "600.0",
+      "name": "crash",
+      "positions": [
+        {
+          "asset": "ETH",
+          "side": "collateral",
+          "value": "1000.0"
+        },
+        {
+          "asset": "USD",
+          "side": "debt",
+          "value": "1200"
+        }
+      ],
+      "seize_value": "630.000"
+    }
+  ]
+}
